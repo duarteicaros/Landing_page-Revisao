@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+h1, h2, h4, a, label{
+   font-family: 'Alata', sans-serif;
+}
+
+.justify{
+    text-align: justify;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+ }
+
+nav {
+    width: 100%;
+    background-color:#d45f68;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+ 
+nav ul{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    list-style: none;
+}
+ 
+nav a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14pt;
+}
+ 
+nav a:hover{
+    color: black;
+}
+
+#logo {
+    width: 70px;
+   height: 30px;
+   margin-right: 350px;
+}
+
+#sobreGen{
+    margin-right: 110px;
+    margin-left: 110px;
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
+#container-sobreGen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.texto-sobre{
+    margin-right: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+#container-curso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sobre-curso{
+    margin-right: 110px;
+    margin-left: 110px;
+}
+
+
+#img-react{
+    width: 390px;
+    height: 250px;
+    border-radius: 35px;
+}
+
+.texto-curso{
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+#container-curriculo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.grade{
+    margin-right: 35px;
+}
+
+.bloco1{
+    background-color: #db6247;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.bloco2{
+    background-color: #e4cc16;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.bloco3{
+    background-color: #0074b9;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#container-curriculo ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 19px;
+    font-size: 17px;
+}
+
+#mercado{
+    margin-right: 110px;
+    margin-left: 110px;
+}
+
+#container-mercado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.img-mercado{
+    width: 450px;
+    height: 300px;
+
+}
+
+.texto-mercado{
+    line-height: 25px;
+    font-size: 18px;
+}
+#inscricao {
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+#inscricao div.row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+ 
+#inscricao div.row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+ 
+ 
