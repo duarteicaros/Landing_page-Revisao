@@ -100,8 +100,14 @@ h4{
 #sobre-curso{
     margin-right: 110px;
     margin-left: 110px;
+    color: whitesmoke;
 }
 
+.cor-curso{
+    background-color: rgba(3, 8, 19, 0.87);
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
 
 #img-react{
     width: 390px;
@@ -172,6 +178,7 @@ h4{
 .img-mercado{
     width: 450px;
     height: 300px;
+    margin-right: 20px;
 
 }
 
@@ -182,7 +189,7 @@ h4{
 #inscricao {
     margin-right: 400px;
     margin-left: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #inscricao div.row{
@@ -197,5 +204,34 @@ h4{
     justify-content: space-around;
     margin-top: 20px;
 }
+
+.inscreva{
+    background-color: #ee431c;
+    color: whitesmoke;
+}
+
+hr{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.logo:hover{
+    width: 51px;
+    height: 51px;
+    padding: 4px;
+}
+
+.obrigatorio{
+    font-size: 11px;
+    color: #ca3412;
+    margin-top: 3px;
+}
+
  
  

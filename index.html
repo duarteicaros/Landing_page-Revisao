@@ -13,11 +13,11 @@
     <nav class="menu">
         <ul>
             <li><img id="logo" src="assets/img/logobranco.png" alt="Logo da Generation"></li>
-            <li><a href="">Sobre a Generation</a></li>
-            <li><a href="">Sobre o Curso</a></li>
-            <li><a href="">Grade Curricular</a></li>
-            <li><a href="">Mercado de Trabalho</a></li>
-            <li><a href="">Inscreva-se</a></li>
+            <li><a href="#sobreGen">Sobre a Generation</a></li>
+            <li><a href="#sobre-curso">Sobre o Curso</a></li>
+            <li><a href="#curriculo">Grade Curricular</a></li>
+            <li><a href="#mercado">Mercado de Trabalho</a></li>
+            <li><a href="#inscricao">Inscreva-se</a></li>
         </ul>
     </nav>
 
@@ -50,29 +50,31 @@
     <!--/Sobre a Generation-->
 
     <!--Sobre o Curso-->
-
-    <section id="sobre-curso">
-        <h2>Sobre o Curso</h2>
-        <div id="container-curso">
-            <div>
-                <img id="img-react" src="assets/img/react3.png" alt="Imagem do React Native">
+    <div class="cor-curso">
+        <section id="sobre-curso">
+            <h2>Sobre o Curso</h2>
+            <div id="container-curso">
+                <div>
+                    <img id="img-react" src="assets/img/react1.jpg" alt="Imagem do React Native">
+                </div>
+    
+                <div class="texto-curso justify">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis deserunt iure minus
+                        exercitationem et, aut nisi fugiat modi unde aperiam doloribus ut vitae, reprehenderit provident nam
+                        fugit totam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam eum
+                        optio eveniet saepe iusto eius ipsa vitae unde! Quo autem asperiores iste hic, vero ipsum tempore
+                        ipsa suscipit corporis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum porro,
+                        harum possimus sunt mollitia eveniet, labore adipisci nam velit ullam architecto, in quis rerum? Id
+                        officiis officia reiciendis voluptatem provident?Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Placeat labore eaque accusantium iure qui earum consequuntur itaque quae totam nemo harum
+                        reprehenderit quod esse similique magni porro quia, fugiat delectus.</p>
+                </div>
             </div>
-
-            <div class="texto-curso justify">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis deserunt iure minus
-                    exercitationem et, aut nisi fugiat modi unde aperiam doloribus ut vitae, reprehenderit provident nam
-                    fugit totam maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam eum
-                    optio eveniet saepe iusto eius ipsa vitae unde! Quo autem asperiores iste hic, vero ipsum tempore
-                    ipsa suscipit corporis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum porro,
-                    harum possimus sunt mollitia eveniet, labore adipisci nam velit ullam architecto, in quis rerum? Id
-                    officiis officia reiciendis voluptatem provident?Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Placeat labore eaque accusantium iure qui earum consequuntur itaque quae totam nemo harum
-                    reprehenderit quod esse similique magni porro quia, fugiat delectus.</p>
-            </div>
-        </div>
-
-
-    </section>
+    
+    
+        </section>
+    </div>
+    
 
     <!--/Sobre o Curso-->
 
@@ -127,7 +129,7 @@
     <section id="mercado">
         <h2>Mercado de Trabalho</h2>
         <div id="container-mercado">
-            <div>
+            <div class="img-mercado">
                 <img class="img-mercado" src="assets/img/foto1.jpg" alt="">
             </div>
 
@@ -145,24 +147,29 @@
 
     <!--Inscreva-se-->
     <section id="inscricao">
-        <h2 class="center">INSCREVA - SE </h2>
+        <div class="row inscreva">
+            <h2 class="center">INSCREVA - SE</h2>
+        </div>
+        
 
         <form>
 
             <div class="row">
                 <label for="nome">Nome completo</label>
-                <input type="text" id="nome">
+                <input type="text" id="nome"onkeyup="validaNome()">
+                <div id="txtNome"></div>
             </div>
 
             <div class="row">
                 <label for="email">E-mail</label>
-                <input type="email" id="email">
+                <input type="email" id="email"onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
             </div>
 
             <div class="row">
                 <label for="conheceu">Como você ficou sabendo da Generation?</label>
-                <select name="conheceu" id="conheceu">
-                    <option value=""></option>
+                <select name="conheceu" id="conheceu" >
+                    <option value="1"></option>
                     <option value="">Internet</option>
                     <option value="">Através de um amigo</option>
                     <option value="">Linkedin</option>
@@ -170,40 +177,45 @@
                     <option value="">Jornal</option>
                     <option value="">Nenhuma das Opções</option>
                 </select>
+                <div class="obrigatorio"> *Campo Obrigatorio</div>
             </div>
 
             <div class="row-2">
-                <label for="data">Data de Nascimento</label>
-                <input type="date" id="data">
+                <label for="datanasci">Data de Nascimento</label>
+                <input type="date" id="datanasci">
 
                 <label for="estado">Estado que reside</label>
                 <select name="estado" id="estado">
+                    <option value="1"></option>
                     <option value="">SP</option>
                     <option value="">RJ</option>
                     <option value="">BA</option>
                     <option value="">PE</option>
                     <option value="">CE</option>
                     <option value="">RS</option>
+                    <option value="">MG</option>
+                    <option value="">TO</option>
+                    <option value="">SC</option>
                 </select>
             </div>
-
+            <div class="obrigatorio"> *Campos Obrigatorios</div>
             <div class="row">
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </div>
         </form>
     </section>
     <!--/Inscreva-se-->
     <hr>
     <!--Footer-->
-    <footer>
+    <footer class="center">
 
-        <div id="container-footer">
-            <a href=""><img src="" alt=""></a>
+        <div id="container-footer ">
+            <a href="https://www.facebook.com/generationbrasil/"><img class="logo" src="assets/img/facebook.png" alt="Logo Facebook"></a>
    
-            <a href=""><img src="" alt=""></a>
+            <a href="https://www.instagram.com/generationbrasil/"><img class="logo"  src="assets/img/instagram.png" alt="Logo Instagram"></a>
    
-            <a href=""><img src="" alt=""></a>
-         </div>
+            <a href="https://www.linkedin.com/school/generationbrasil/?originalSubdomain=br"><img class="logo"  src="assets/img/linkedin.png" alt="Logo Linkedin"></a>
+        </div>
    
          <p class="center">
             Todos os direitos reservados para: 2020 Generation: You Emplayed, Inc. &copy
